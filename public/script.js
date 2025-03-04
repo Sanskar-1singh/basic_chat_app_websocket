@@ -20,9 +20,9 @@ socket.on('msg_recieved',(data)=>{
 // btn.onclick=function exec(){
 //     socket.emit('from_client')
 // }
-// socket.on('from_server',()=>{
-//     console.log('collected new msg from server');
-//     const div=document.createElement('div');
-//     div.innerText='new event from server';
-//     document.body.appendChild(div);
-// })
+socket.on('from_server',()=>{
+    console.log('collected new msg from server');
+    const div=document.createElement('div');
+    div.innerText='new event from server';
+    document.body.appendChild(div);
+})
